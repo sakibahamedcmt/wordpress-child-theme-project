@@ -1,0 +1,49 @@
+/* Overlay */
+.csf-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+}
+.csf-overlay.active { display: block; }
+
+/* Sidebar */
+.csf-sidebar {
+    position: fixed;
+    top: 0; left: -320px;
+    width: 320px;
+    height: 100%;
+    background: #fff;
+    z-index: 1000;
+    overflow-y: auto;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+    transition: left 0.3s ease;
+    padding: 20px;
+}
+.csf-sidebar.active { left: 0; }
+
+/* Header */
+.csf-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.csf-head h3 { margin: 0; font-size: 18px; }
+.csf-close { background: transparent; border: none; font-size: 24px; cursor: pointer; }
+
+/* Sections */
+.csf-section { margin-bottom: 20px; }
+.csf-section h4 { margin-bottom: 10px; font-size: 16px; }
+
+/* Price Inputs */
+.csf-price-inputs { display: flex; gap: 10px; margin-top: 5px; }
+.csf-price-inputs input { width: 100%; padding: 5px; }
+
+/* Actions */
+.csf-actions { display: flex; gap: 10px; margin-top: 10px; }
+.csf-actions button { flex: 1; padding: 10px; cursor: pointer; }
+
+/* Open button */
+#csf-open { padding: 10px 15px; cursor: pointer; background:#0071a1; color:#fff; border:none; border-radius:3px; }
